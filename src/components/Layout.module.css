@@ -1,0 +1,19 @@
+.header {
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  max-width: 786px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+.logo {
+  font-size: 20px;
+}
