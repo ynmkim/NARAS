@@ -25,7 +25,7 @@ export default function SearchForm({ q }) {
   return (
     <form className={style['search-form']} onSubmit={handleSubmit}>
       <input
-        value={keyword}
+        value={keyword || ''}
         onChange={handleKeywordChange}
         placeholder="검색어를 입력하세요"
         className={style['search-input']}
