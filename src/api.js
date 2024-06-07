@@ -9,10 +9,10 @@ export async function getCountries() {
   }
 }
 
-export async function getSearchResults(query) {
+export async function getSearchResults(keyword) {
   try {
     const res = await axios.get(
-      `https://naras-api.vercel.app/search?keyword=${query}`
+      `https://naras-api.vercel.app/search?q=${keyword}`
     );
     return res.data;
   } catch (e) {

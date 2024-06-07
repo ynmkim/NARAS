@@ -1,0 +1,23 @@
+.search-form {
+  display: flex;
+  gap: 12px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  border-radius: 5px;
+  height: 48px;
+  padding: 16px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.search-button {
+  border: none;
+  border-radius: 5px;
+  width: 56px;
+  height: 48px;
+  cursor: pointer;
+  font-size: 15px;
+}
