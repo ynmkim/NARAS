@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
 import { getCountries } from '../api';
+import SearchForm from '../components/SearchForm';
+import CountryList from '../components/CountryList';
+import style from './Home.module.css';
 
 export default function Home() {
-  const [contries, setCountries] = useState([]);
+  const [countries, setCountries] = useState([]);
 
   const fetchData = async () => {
     const data = await getCountries();
@@ -13,5 +16,10 @@ export default function Home() {
     fetchData();
   }, []);
 
-  return <div>Home</div>;
+  return (
+    <div className={style.container}>
+      <SearchForm />
+      <CountryList countries={countries} />
+    </div>
+  );
 }
