@@ -6,10 +6,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 90;
 }
 
 .main {
-  max-width: 786px;
+  width: 100%;
+  max-width: 768px;
   margin: 0 auto;
   padding: 40px 16px;
 }
