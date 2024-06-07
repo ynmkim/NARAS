@@ -1,7 +1,7 @@
 import CountryItem from './CountryItem';
 import style from './CountryList.module.css';
 
-export default function CountryList({ countries }) {
+export default function CountryList({ countries = [] }) {
   return (
     <ul className={style['country-list']}>
       {countries.map((country) => (
@@ -10,7 +10,3 @@ export default function CountryList({ countries }) {
     </ul>
   );
 }
-
-// CountryList.defaultProps = {
-//   countries: [],
-// };
