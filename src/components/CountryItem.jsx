@@ -12,13 +12,13 @@ export default function CountryItem({
 }) {
   return (
     <li className={style['country-item']}>
-      <Link to={`country/${code}`}>
+      <Link to={`/country/${code}`}>
         <div className={style['card-image']}>
-          <img src={flagImg} alt={commonName} />
+          <img src={flagImg} alt={`${commonName}의 국기`} />
         </div>
         <div className={style['card-text']}>
           <h3 className={style['country-name']}>
-            {flagEmoji} {commonName}
+            {flagEmoji}&nbsp;{commonName}
           </h3>
           <dl className={style['country-info']}>
             <div className={style['country-info-item']}>
