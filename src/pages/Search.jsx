@@ -24,7 +24,7 @@ export default function Search() {
       <SearchForm q={keyword} />
 
       <h2 className={style.title}>
-        <b className={style.keyword}>{keyword}</b> 검색 결과
+        <strong className={style.keyword}>{keyword}</strong> 검색 결과
       </h2>
 
       <CountryList countries={countries} />
