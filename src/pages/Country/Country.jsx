@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { getCountry } from '../api';
+import { getCountry } from '../../api';
 import style from './Country.module.css';
 
 export default function Country() {

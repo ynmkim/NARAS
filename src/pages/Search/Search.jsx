@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { getSearchResults } from '../api';
+import { getSearchResults } from '../../api';
 import style from './Search.module.css';
-import SearchForm from '../components/SearchForm';
-import CountryList from '../components/CountryList';
+import SearchForm from '../../components/SearchForm/SearchForm';
+import CountryList from '../../components/CountryList/CountryList';
 
 export default function Search() {
   const [countries, setCountries] = useState([]);

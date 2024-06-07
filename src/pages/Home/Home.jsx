@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { getCountries } from '../api';
-import SearchForm from '../components/SearchForm';
-import CountryList from '../components/CountryList';
+import { getCountries } from '../../api';
+import SearchForm from '../../components/SearchForm/SearchForm';
+import CountryList from '../../components/CountryList/CountryList';
 import style from './Home.module.css';
 
 export default function Home() {

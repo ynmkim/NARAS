@@ -1,4 +1,4 @@
-import CountryItem from './CountryItem';
+import CountryItem from '../CountryItem/CountryItem';
 import style from './CountryList.module.css';
 
 export default function CountryList({ countries = [] }) {
