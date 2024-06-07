@@ -43,3 +43,11 @@
   display: flex;
   gap: 4px;
 }
+
+.country-info-item dt {
+  flex-shrink: 0;
+}
+
+.country-info-item dd {
+  word-break: break-all;
+}
