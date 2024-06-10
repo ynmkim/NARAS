@@ -30,9 +30,11 @@ export default function SearchForm({ q }) {
         placeholder="검색어를 입력하세요"
         className={style['search-input']}
       />
-      <button type="submit" className={style['search-button']}>
-        검색
-      </button>
+      <button
+        type="submit"
+        className={style['search-button']}
+        aria-label="검색"
+      ></button>
     </form>
   );
 }
